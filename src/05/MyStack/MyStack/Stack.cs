@@ -4,14 +4,13 @@ namespace MyStack
 {
     public class Stack
     {
-        private int value;
         private int size;
 
-        public Stack()
-        {
-        }
-
         public bool IsEmpty => size == 0;
+
+        public int Size => size;
+
+        private int value;
 
         public int Top
         {
@@ -21,8 +20,6 @@ namespace MyStack
                 return value;
             }
         }
-
-        public int Size => size;
 
         public void Push(int value)
         {
