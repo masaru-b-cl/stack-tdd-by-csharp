@@ -10,12 +10,6 @@ namespace MyStack
 
         private int[] values = new int[10];
 
-        public void Push(int value)
-        {
-            values[Size] = value;
-            Size++;
-        }
-
         public int Top
         {
             get
@@ -23,6 +17,12 @@ namespace MyStack
                 AssertNotEmpty();
                 return values[Size - 1];
             }
+        }
+
+        public void Push(int value)
+        {
+            this.values[Size] = value;
+            Size++;
         }
 
         public void Pop()
