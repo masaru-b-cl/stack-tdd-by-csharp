@@ -2,17 +2,13 @@
 {
     public class Stack
     {
-        private int value;
-
-        public Stack()
-        {
-        }
-
         public bool IsEmpty => true;
 
-        public int Top => value;
-
         public int Size => 1;
+
+        private int value;
+
+        public int Top => value;
 
         public void Push(int value)
         {
